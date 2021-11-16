@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/contacts.css" rel="stylesheet" type="text/css">
+    <link href="css/navbar.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> </title>
+
+    <ul>
+        <li><a href="/"><i class="fa fa-fw fa-home"></i>Home</a></li>
+        <li><a href="/events"><i class="fa fa-fw fa-gift"></i>Events</a></li>
+        <li><a href="/contacts"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>    
+    </ul>
+
+</head>
+<body>
+    
+
+    <div class="container">
+        <h2><%= contacts01 %> </h2>
+        <form submit="/submit">
+            <label for="fname"><%= contacts02 %> </label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+            <label for="lname"><%= contacts03 %> </label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+            <label for="country"><%= contacts04 %> </label>
+            <select id="country" name="country">
+            <option value="iceland"><%= contacts05 %> </option>
+            <option value="australia"><%= contacts06 %> </option>
+            <option value="usa"><%= contacts07 %> </option>
+            <option value="other"><%= contacts08 %> </option>
+            </select>
+            
+            <label for="subject"><%= contacts09 %> </label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <button href="/submit" style="background-color: #525050">
+            <h1>hello</h1>
+            </button>
+        </form>
+    </div>
+</body>
+</html>
