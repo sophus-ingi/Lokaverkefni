@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("flowers.png");
+}
+
+  /* --background-image: url("/w3images/photographer.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;---Float four columns side by side */
+
+  .bg-image {
+    /* The image used */
+    background-image: url("flowers.png");
+    
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    
+    /* Full height */
+    height: 100%; 
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.column01 {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+    margin-bottom: 70px;
+    margin-left: 170px;
+    transform: translate(1px, 1px);
+}
+.column02 {
+  float: right;
+  width: 30%;
+  padding: 0 10px;
+  margin-bottom: 70px;
+  margin-right: 170px;
+  transform: translate(1px, 1px);
+}
+.column03 {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+  margin-bottom: 70px;
+  margin-left: 170px;
+  transform: translate(1px, 1px);
+}
+.column04 {
+  float: right;
+  width: 30%;
+  padding: 0 10px;
+  margin-bottom: 70px;
+  margin-right: 170px;
+  transform: translate(1px, 1px);
+}
+
+  /* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+
+
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  /* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    }
+}
+
+  /* Style the counter cards */
+.card01 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f0eeee;
+}
+.card02 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f0eeee;
+}
+.card03 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f0eeee;
+}
+.card04 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f0eeee;
+}
+img {
+  border: 5px solid #555;
+}
